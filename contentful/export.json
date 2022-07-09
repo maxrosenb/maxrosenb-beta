@@ -105,7 +105,7 @@
         "id": "blogPost",
         "type": "ContentType",
         "createdAt": "2022-07-09T18:41:33.262Z",
-        "updatedAt": "2022-07-09T20:32:14.997Z",
+        "updatedAt": "2022-07-09T23:29:24.972Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -113,8 +113,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2022-07-09T20:32:14.997Z",
+        "publishedVersion": 9,
+        "publishedAt": "2022-07-09T23:29:24.972Z",
         "firstPublishedAt": "2022-07-09T18:41:34.177Z",
         "createdBy": {
           "sys": {
@@ -130,8 +130,8 @@
             "id": "5nW10MltBcooTzhJOR6Nnz"
           }
         },
-        "publishedCounter": 3,
-        "version": 6,
+        "publishedCounter": 5,
+        "version": 10,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -529,7 +529,7 @@
             "linkType": "Space"
           }
         },
-        "version": 6,
+        "version": 10,
         "createdAt": "2022-07-09T18:41:34.270Z",
         "createdBy": {
           "sys": {
@@ -538,7 +538,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2022-07-09T20:32:16.018Z",
+        "updatedAt": "2022-07-09T23:29:25.258Z",
         "updatedBy": {
           "sys": {
             "id": "5nW10MltBcooTzhJOR6Nnz",
@@ -817,7 +817,7 @@
         "id": "31TNnjHlfaGUoMOwU0M2og",
         "type": "Entry",
         "createdAt": "2022-07-09T18:41:57.365Z",
-        "updatedAt": "2022-07-09T20:41:41.955Z",
+        "updatedAt": "2022-07-09T23:27:44.741Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -825,8 +825,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 65,
-        "publishedAt": "2022-07-09T20:41:41.955Z",
+        "publishedVersion": 299,
+        "publishedAt": "2022-07-09T23:27:44.741Z",
         "firstPublishedAt": "2022-07-09T18:41:58.178Z",
         "createdBy": {
           "sys": {
@@ -842,8 +842,8 @@
             "id": "5nW10MltBcooTzhJOR6Nnz"
           }
         },
-        "publishedCounter": 20,
-        "version": 66,
+        "publishedCounter": 78,
+        "version": 300,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -871,15 +871,15 @@
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "4shwYI3POEGkw0Eg6kcyaQ"
+              "id": "4NzwDSDlGECGIiokKomsyI"
             }
           }
         },
         "description": {
-          "en-US": "React Query is a dope library and you should probably be using it."
+          "en-US": "React Query offers a declarative approach for fetching data with hooks. Here's how you can combine it with AG-Grid to quickly create sleek and speedy data grids."
         },
         "body": {
-          "en-US": "<p>hello world</p>\n\n```\nconsole.log(\"HELLO\")\n```\n\ntesting"
+          "en-US": "<p>The end</p>\n"
         },
         "author": {
           "en-US": {
@@ -912,7 +912,155 @@
                     },
                     "marks": [
                     ],
-                    "value": "Here is the blog post. First example:",
+                    "value": "Why React Query for Data Fetching?",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                ],
+                "nodeType": "hr"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                          {
+                            "type": "italic"
+                          }
+                        ],
+                        "value": "\"People are really much more interested in data fetching and caching than they are managing state.\"",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                        ],
+                        "value": " ",
+                        "nodeType": "text"
+                      },
+                      {
+                        "data": {
+                        },
+                        "marks": [
+                          {
+                            "type": "bold"
+                          }
+                        ],
+                        "value": "- Mark Erikson, Redux Maintainer",
+                        "nodeType": "text"
+                      }
+                    ],
+                    "nodeType": "paragraph"
+                  }
+                ],
+                "nodeType": "blockquote"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                ],
+                "nodeType": "hr"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The first question we should naturally be concerned with when facing any new technology is: \n\n\"Why is this better than the existing alternative?\" \n\nLuckily in our case, the benefits of using React Query's useQuery hook over useEffect are rather clear. useQuery offers a much more declarative and natural API for fetching data than useEffect, which is a rather manual way of doing data fetching in React; so much so that the React team themself now recommend not using effects for data fetching.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Normally when you use AG Grid and other data tables with React, you must keep all of the data for your data table in the state of your components. Thus any kind of updating, caching, etc. of the data must be handled manually by the developer through useEffect and other means. React Query offers a much cleaner approach to fetching and managing data for data tables than useState and useEffect alone provide.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Getting Started\n",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\nThe first step is to write a function to get the data from the backend. This tutorial won't cover creating the backend, but I've set up a simple server that returns a JSON response from the guitars endpoint. We use fetch to write a function that returns this data like so:",
                     "nodeType": "text"
                   }
                 ],
@@ -930,7 +1078,7 @@
                         "type": "code"
                       }
                     ],
-                    "value": "const a = 3;\n",
+                    "value": "// src/GuitarTable/queryFunctions.tsx\nexport async function getGuitars() {\n  const response = await fetch(\"http://localhost:8000/guitars\");\n  const data = await response.json();\n  return data;\n}",
                     "nodeType": "text"
                   }
                 ],
@@ -945,7 +1093,133 @@
                     },
                     "marks": [
                     ],
-                    "value": "testing",
+                    "value": "Writing the query ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "useQuery takes three arguments: A query key, the query function, and the query config. Here is how we can use the above function within useQuery to get the guitar data from the server:\n\n",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "value": "// src/GuitarTable/queries.ts\nimport { useQuery } from \"react-query\";\nimport { getGuitars } from \"./queryFunctions\";\nexport const useGuitars = () => {\n  return useQuery(\"guitars\", getGuitars);\n};\n",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Using the data from our query in the AG-Grid data table",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Now we simply need to hook up our query to the AG Grid React component, like so:",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "code"
+                      }
+                    ],
+                    "value": "\n// src/GuitarTable/GuitarTable.tsx\nimport \"ag-grid-community/styles//ag-grid.css\";\nimport \"ag-grid-community/styles//ag-theme-alpine.css\";\nimport { AgGridReact } from \"ag-grid-react\";\nimport { columnDefs } from \"./columnDefs\";\nimport { useGuitars } from \"./queries\";\nconst GuitarTable = () => {\n  const { data } = useGuitars();\n  return (\n    <div>\n      <h1>Mango's Guitars</h1>\n      <div\n        className=\"ag-theme-alpine\"\n        style={{\n          height: \"500px\",\n          width: \"600px\",\n        }}\n      >\n        <AgGridReact columnDefs={columnDefs} rowData={data} />\n      </div>\n    </div>\n  );\n};\nexport default GuitarTable;\n",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "\nAnd just like that, we've built a robust, fast, sleek data grid.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "6kJRUVawXEaLZj3GdPcuzG",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ],
+                "nodeType": "embedded-asset-block"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
                     "nodeType": "text"
                   }
                 ],
@@ -1164,7 +1438,7 @@
         "id": "1lUcIFh7NuiYBgq2d8Okgq",
         "type": "Entry",
         "createdAt": "2022-07-09T18:55:41.383Z",
-        "updatedAt": "2022-07-09T18:59:23.663Z",
+        "updatedAt": "2022-07-09T21:48:34.120Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1172,8 +1446,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 8,
-        "publishedAt": "2022-07-09T18:59:23.663Z",
+        "publishedVersion": 10,
+        "publishedAt": "2022-07-09T21:48:34.120Z",
         "firstPublishedAt": "2022-07-09T18:56:08.577Z",
         "createdBy": {
           "sys": {
@@ -1189,8 +1463,8 @@
             "id": "5nW10MltBcooTzhJOR6Nnz"
           }
         },
-        "publishedCounter": 2,
-        "version": 9,
+        "publishedCounter": 3,
+        "version": 11,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1208,7 +1482,7 @@
       },
       "fields": {
         "name": {
-          "en-US": "Max"
+          "en-US": "Max Rosenberg"
         },
         "title": {
           "en-US": "Software Engineer"
@@ -1521,6 +1795,228 @@
             },
             "fileName": "matt-palmer-254999.jpg",
             "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "gyyto7vhomyh"
+          }
+        },
+        "id": "2t9Hou2QqS5IaT5Hen4LvP",
+        "type": "Asset",
+        "createdAt": "2022-07-09T21:09:47.975Z",
+        "updatedAt": "2022-07-09T21:10:14.149Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2022-07-09T21:10:14.149Z",
+        "firstPublishedAt": "2022-07-09T21:10:14.149Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5nW10MltBcooTzhJOR6Nnz"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5nW10MltBcooTzhJOR6Nnz"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5nW10MltBcooTzhJOR6Nnz"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "RQ Tut Pic"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/gyyto7vhomyh/2t9Hou2QqS5IaT5Hen4LvP/c942bc8d7bc7a35bc10d883e6bd7723e/692209079187406859.webp",
+            "details": {
+              "size": 5920,
+              "image": {
+                "width": 96,
+                "height": 96
+              }
+            },
+            "fileName": "692209079187406859.webp",
+            "contentType": "image/webp"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "gyyto7vhomyh"
+          }
+        },
+        "id": "7boEarOczMf2Y5ncu49oci",
+        "type": "Asset",
+        "createdAt": "2022-07-09T21:10:40.371Z",
+        "updatedAt": "2022-07-09T21:11:34.271Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2022-07-09T21:11:34.271Z",
+        "firstPublishedAt": "2022-07-09T21:11:34.271Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5nW10MltBcooTzhJOR6Nnz"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5nW10MltBcooTzhJOR6Nnz"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5nW10MltBcooTzhJOR6Nnz"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "evilkermit"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/gyyto7vhomyh/7boEarOczMf2Y5ncu49oci/707ed223e97c2b87fb60e456b87fe672/evilkermit.png",
+            "details": {
+              "size": 18784,
+              "image": {
+                "width": 126,
+                "height": 128
+              }
+            },
+            "fileName": "evilkermit.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "gyyto7vhomyh"
+          }
+        },
+        "id": "6kJRUVawXEaLZj3GdPcuzG",
+        "type": "Asset",
+        "createdAt": "2022-07-09T23:23:55.358Z",
+        "updatedAt": "2022-07-09T23:24:22.066Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2022-07-09T23:24:22.066Z",
+        "firstPublishedAt": "2022-07-09T23:24:22.066Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5nW10MltBcooTzhJOR6Nnz"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5nW10MltBcooTzhJOR6Nnz"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5nW10MltBcooTzhJOR6Nnz"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Max's Guitars Data Grid"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/gyyto7vhomyh/6kJRUVawXEaLZj3GdPcuzG/e1b36b191ad442bcffeb22693b099041/Screen_Shot_2022-07-09_at_7.24.07_PM.png",
+            "details": {
+              "size": 188159,
+              "image": {
+                "width": 2836,
+                "height": 1490
+              }
+            },
+            "fileName": "Screen Shot 2022-07-09 at 7.24.07 PM.png",
+            "contentType": "image/png"
           }
         }
       }

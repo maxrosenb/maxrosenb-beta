@@ -18,26 +18,30 @@
   "scripts": {
     "build": "remix build",
     "dev": "remix dev",
-    "setup": "npx contentful-cli space import --content-file=contentful/export.json --space-id=$CONTENTFUL_SPACE --management-token=$CONTENTFUL_CMA_TOKEN",
+    "setup": "npx contentful-cli space import --content-file=contentful/export.json --space-id=gyyto7vhomyh --management-token=CFPAT-MHOh-ibiYcvcaiMZW5Tmi1j_OA-M9Nvscm3yMuD6qk8",
     "postinstall": "remix setup node",
     "generate": "npx cf-content-types-generator -s $CONTENTFUL_SPACE -t $CONTENTFUL_CMA_TOKEN -o ./types/generated --localized"
   },
   "dependencies": {
     "@apollo/client": "^3.5.7",
     "@contentful/rich-text-from-markdown": "^15.11.1",
+    "@contentful/rich-text-html-renderer": "^15.13.1",
     "@contentful/rich-text-react-renderer": "^15.11.1",
     "@remix-run/react": "^1.1.3",
     "@remix-run/serve": "^1.1.3",
+    "dotenv": "^16.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-syntax-highlighter": "^15.5.0",
     "reading-time": "^1.5.0",
-    "remix": "^1.1.3"
+    "remix": "^1.6.4"
   },
   "devDependencies": {
     "@contentful/rich-text-types": "^15.11.1",
     "@remix-run/dev": "^1.1.3",
     "@remix-run/vercel": "^1.1.3",
     "@types/graphql": "^14.5.0",
+    "@types/node": "^18.0.3",
     "@types/react": "^17.0.24",
     "@types/react-dom": "^17.0.9",
     "contentful": "^9.1.5",

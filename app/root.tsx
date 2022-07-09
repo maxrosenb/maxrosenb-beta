@@ -30,7 +30,8 @@ export const links = () => [
 ];
 
 export const meta: MetaFunction = ({ parentsData, params }) => {
-  const description = "Remix starter for a Contentful blog (template) project";
+  const description =
+    "A coding blog focusing on web development, design, and React.";
   const content = "default description";
   const keywords = "Contentful, Blog, Starter, Remix";
   const title = "Max Rosenberg's Tech Blog";

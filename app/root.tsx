@@ -55,8 +55,8 @@ export default function App() {
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta name="viewport" content="width=500, initial-scale=1" />
+        <meta name="viewport" content="width=device-width" />
+
         <Meta />
         <Links />
       </head>

@@ -3,7 +3,7 @@
     font-size: var(--text-lg);
     font-style: italic;
     margin: 0 auto 1em;
-    max-width: var(--size-max-width);
+    max-width: 48rem;
     padding-bottom: var(--size-gutter);
     padding-left: var(--size-gutter);
     position: relative;

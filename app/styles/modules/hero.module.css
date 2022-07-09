@@ -1,3 +1,15 @@
+@media only screen and (max-width: 600px) {
+.hero-module .hero {
+        align-items: flex-end;
+        display: flex;
+        margin: 0 auto;
+        width: 150%;
+        min-height: 200px;
+        padding: 0 0 var(--size-gutter);
+        position: relative;
+    }
+}
+
 .hero-module .hero {
     align-items: flex-end;
     display: flex;

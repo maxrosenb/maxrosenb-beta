@@ -22,7 +22,10 @@ export type TypePostPreview = {
 >;
 
 export type TypePostDetail = {
-  author: { name: string };
+  author: {
+    profilepic: TypeImage;
+    name: string;
+  };
 } & TypePostPreview &
   Pick<TypeBlogPostFields, "body"> &
   Pick<TypeBlogPostFields, "content">;

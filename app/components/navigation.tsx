@@ -6,17 +6,9 @@ const Navigation: React.FC = () => (
   <CssModuleWrapper className={"navigation-module"}>
     <nav role="navigation" className={"container"} aria-label="Main">
       <Link to="/" className={"logoLink"}>
-        <span className={"logo"} />
-        <span className={"navigationItem"}>maxrosenb.dev</span>
+        {/* <span className={"logo"} /> */}
+        <span className={"navigationItem"}>Max Rosenberg's Tech Blog</span>
       </Link>
-      <ul className={"navigation"}>
-        <li className={"navigationItem"}>
-          <Link to="/" /*activeClassName="active"*/>Home</Link>
-        </li>
-        <li className={"navigationItem"}>
-          <Link to="/blog/" /*activeClassName="active"*/>Blog</Link>
-        </li>
-      </ul>
     </nav>
   </CssModuleWrapper>
 );

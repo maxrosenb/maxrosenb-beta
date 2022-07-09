@@ -14,8 +14,12 @@ import { TypePostDetail } from "../../types/contentful-graphql-types";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { MARKS } from "@contentful/rich-text-types";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { obsidian } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import {
+  obsidian,
+  hybrid,
+} from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import blogPostStyles from "../styles/blog-post.page.css";
+import { ContentfulImage } from "~/components/contentful-image";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: blogPostStyles },
@@ -74,7 +78,7 @@ export default function BlogPost() {
         return (
           <SyntaxHighlighter
             language="javascript"
-            style={obsidian}
+            style={hybrid}
             showLineNumbers
           >
             {text}
@@ -83,6 +87,8 @@ export default function BlogPost() {
       },
     },
   };
+
+  const image = post.author?.profilepic;
 
   return (
     <article className={"blog-post"}>
@@ -93,12 +99,40 @@ export default function BlogPost() {
       />
       <div className={"container"}>
         <span className={"meta"}>
-          {post.author?.name} &middot;{" "}
-          <time dateTime={post.publishDate}>
-            {toReadableDate(post.publishDate)}
-          </time>{" "}
-          – {timeToRead} minute read
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+
+              alignItems: "center",
+            }}
+          >
+            {post.author?.profilepic && (
+              <div>
+                <figure className={"image"}>
+                  <picture>
+                    <div>
+                      <img
+                        src={image.url}
+                        alt={image.title}
+                        style={{
+                          width: "60px",
+                          height: "60px",
+                          borderRadius: "50%",
+                        }}
+                      />{" "}
+                    </div>
+                  </picture>
+                </figure>
+              </div>
+            )}
+            {post.author?.name} &middot;{" "}
+            <time dateTime={post.publishDate}>
+              {toReadableDate(post.publishDate)}
+            </time>{" "}
+          </div>
         </span>
+
         <div className={"article"}>
           <div className={"body"}>
             {/* @ts-ignore */}

@@ -34,7 +34,7 @@
 
 .blog-post .article a:hover {
     border-bottom-color: transparent;
-    color: var(--primary);
+    color: white;
 }
 
 .blog-post .article p {
@@ -70,10 +70,14 @@
     padding: 0;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 600px) {
     .blog-post .container {
         max-width: var(--size-max-width);
         margin: 0 auto;
+    }
+
+    .body {
+        width: 33rem;
     }
 
     .blog-post .article {

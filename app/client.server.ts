@@ -91,6 +91,13 @@ async function getPost(slug: string): Promise<TypePostDetail> {
                 }
                 author {
                     name
+                    profilepic {
+                        title
+                        url
+                        width
+                        height
+                        contentType
+                    }
                 }
                 }
               }

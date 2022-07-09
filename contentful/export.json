@@ -817,7 +817,7 @@
         "id": "31TNnjHlfaGUoMOwU0M2og",
         "type": "Entry",
         "createdAt": "2022-07-09T18:41:57.365Z",
-        "updatedAt": "2022-07-09T23:27:44.741Z",
+        "updatedAt": "2022-07-10T00:09:00.235Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -825,8 +825,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 299,
-        "publishedAt": "2022-07-09T23:27:44.741Z",
+        "publishedVersion": 335,
+        "publishedAt": "2022-07-10T00:09:00.235Z",
         "firstPublishedAt": "2022-07-09T18:41:58.178Z",
         "createdBy": {
           "sys": {
@@ -842,8 +842,8 @@
             "id": "5nW10MltBcooTzhJOR6Nnz"
           }
         },
-        "publishedCounter": 78,
-        "version": 300,
+        "publishedCounter": 84,
+        "version": 336,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -891,7 +891,7 @@
           }
         },
         "publishDate": {
-          "en-US": "2022-07-09T00:00+08:00"
+          "en-US": "2022-07-10T00:00+00:00"
         },
         "tags": {
           "en-US": [
@@ -1045,7 +1045,52 @@
                     },
                     "marks": [
                     ],
-                    "value": "Getting Started\n",
+                    "value": "Creating a Data Table with React Query",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "This tutorial will focus on building a data table of my (fictional) guitars using React Query and AG-Grid. For more deeply customizable grids, I would recommend using React Table, however AG-Grid offers a robust and simple out of the box solution that is great for the purposes of this demonstration.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Getting Started",
                     "nodeType": "text"
                   }
                 ],
@@ -1149,31 +1194,9 @@
                     },
                     "marks": [
                     ],
-                    "value": "",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
                     "value": "Now we simply need to hook up our query to the AG Grid React component, like so:",
                     "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
+                  },
                   {
                     "data": {
                     },
@@ -1182,7 +1205,7 @@
                         "type": "code"
                       }
                     ],
-                    "value": "\n// src/GuitarTable/GuitarTable.tsx\nimport \"ag-grid-community/styles//ag-grid.css\";\nimport \"ag-grid-community/styles//ag-theme-alpine.css\";\nimport { AgGridReact } from \"ag-grid-react\";\nimport { columnDefs } from \"./columnDefs\";\nimport { useGuitars } from \"./queries\";\nconst GuitarTable = () => {\n  const { data } = useGuitars();\n  return (\n    <div>\n      <h1>Mango's Guitars</h1>\n      <div\n        className=\"ag-theme-alpine\"\n        style={{\n          height: \"500px\",\n          width: \"600px\",\n        }}\n      >\n        <AgGridReact columnDefs={columnDefs} rowData={data} />\n      </div>\n    </div>\n  );\n};\nexport default GuitarTable;\n",
+                    "value": "\n// src/GuitarTable/GuitarTable.tsx\nimport \"ag-grid-community/styles//ag-grid.css\";\nimport \"ag-grid-community/styles//ag-theme-alpine.css\";\nimport { AgGridReact } from \"ag-grid-react\";\nimport { columnDefs } from \"./columnDefs\";\nimport { useGuitars } from \"./queries\";\nconst GuitarTable = () => {\n  const { data } = useGuitars();\n  return (\n    <div>\n      <h1>Max's Guitars</h1>\n      <div\n        className=\"ag-theme-alpine\"\n        style={{\n          height: \"500px\",\n          width: \"600px\",\n        }}\n      >\n        <AgGridReact columnDefs={columnDefs} rowData={data} />\n      </div>\n    </div>\n  );\n};\nexport default GuitarTable;\n",
                     "nodeType": "text"
                   },
                   {
@@ -1325,100 +1348,6 @@
               "id": "7orLdboQQowIUs22KAW4U"
             }
           }
-        }
-      }
-    },
-    {
-      "metadata": {
-        "tags": [
-        ]
-      },
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "gyyto7vhomyh"
-          }
-        },
-        "id": "3KYayJIsFjtLaGj4au67fO",
-        "type": "Entry",
-        "createdAt": "2022-07-09T18:55:14.390Z",
-        "updatedAt": "2022-07-09T18:56:35.539Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 7,
-        "publishedAt": "2022-07-09T18:56:35.539Z",
-        "firstPublishedAt": "2022-07-09T18:56:35.539Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "5nW10MltBcooTzhJOR6Nnz"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "5nW10MltBcooTzhJOR6Nnz"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 8,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "5nW10MltBcooTzhJOR6Nnz"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "type": "Link",
-            "linkType": "ContentType",
-            "id": "blogPost"
-          }
-        }
-      },
-      "fields": {
-        "title": {
-          "en-US": "Test Post 1"
-        },
-        "slug": {
-          "en-US": "test-post-1"
-        },
-        "heroImage": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Asset",
-              "id": "4NzwDSDlGECGIiokKomsyI"
-            }
-          }
-        },
-        "description": {
-          "en-US": "test post "
-        },
-        "body": {
-          "en-US": "hello world"
-        },
-        "author": {
-          "en-US": {
-            "sys": {
-              "type": "Link",
-              "linkType": "Entry",
-              "id": "1lUcIFh7NuiYBgq2d8Okgq"
-            }
-          }
-        },
-        "publishDate": {
-          "en-US": "2022-07-09T00:00-04:00"
         }
       }
     },

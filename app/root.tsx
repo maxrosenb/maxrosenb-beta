@@ -33,7 +33,8 @@ export const meta: MetaFunction = ({ parentsData, params }) => {
   const description =
     "A coding blog focusing on web development, design, and React.";
   const content = "default description";
-  const keywords = "Contentful, Blog, Starter, Remix";
+  const keywords =
+    "Contentful, Blog, Starter, Remix, React, TypeScript, JavaScript, Design, Web Development";
   const title = "Max Rosenberg's Tech Blog";
 
   return {

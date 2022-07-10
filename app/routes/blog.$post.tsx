@@ -20,6 +20,7 @@ import {
 } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import blogPostStyles from "../styles/blog-post.page.css";
 import { ContentfulImage } from "~/components/contentful-image";
+import { motion } from "framer-motion";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: blogPostStyles },
@@ -135,10 +136,17 @@ export default function BlogPost() {
         </span>
 
         <div className={"article"}>
-          <div className={"body"}>
-            {/* @ts-ignore */}
-            {documentToReactComponents(post.content.json, options)}
-          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            whileInView={{ opacity: 1 }}
+            className="w-full h-full md:col-span-3 sm:overflow-auto relative z-0"
+          >
+            <div className={"body"}>
+              {/* @ts-ignore */}
+              {documentToReactComponents(post.content.json, options)}
+            </div>
+          </motion.div>
 
           {document}
           {/* @ts-ignore */}

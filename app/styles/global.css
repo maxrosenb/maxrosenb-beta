@@ -33,6 +33,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+p {
+  font-size: 19px;
+}
+
 img {
   display: block;
   width: 100%;

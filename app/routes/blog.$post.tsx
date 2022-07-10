@@ -16,7 +16,7 @@ import { MARKS } from "@contentful/rich-text-types";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import {
   obsidian,
-  hybrid,
+  tomorrowNightBlue,
 } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import blogPostStyles from "../styles/blog-post.page.css";
 import { ContentfulImage } from "~/components/contentful-image";
@@ -58,12 +58,13 @@ export const meta: MetaFunction = ({ parentsData, params, data, location }) => {
 export default function BlogPost() {
   const { post, body, timeToRead } = useLoaderData<LoaderData>();
   const document = useReactComponentFromDocument(body);
-  console.log("POST:");
-  console.log(post);
 
   const options = {
     renderNode: {
-      [BLOCKS.PARAGRAPH]: (node, children) => {
+      [BLOCKS.PARAGRAPH]: (
+        node: { content: string | any[] },
+        children: {} | null | undefined
+      ) => {
         if (
           node.content.length === 1 &&
           node.content[0].marks.find((x) => x.type === "code")
@@ -78,7 +79,7 @@ export default function BlogPost() {
         return (
           <SyntaxHighlighter
             language="javascript"
-            style={hybrid}
+            style={tomorrowNightBlue}
             showLineNumbers
           >
             {text}

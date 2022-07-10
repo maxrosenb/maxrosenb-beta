@@ -108,7 +108,7 @@ export default function BlogPost() {
             }}
           >
             {post.author?.profilepic && (
-              <div>
+              <div className="figureContainer">
                 <figure className={"image"}>
                   <picture>
                     <div>

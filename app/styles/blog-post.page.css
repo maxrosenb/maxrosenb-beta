@@ -98,4 +98,8 @@
     .blog-post .article ul {
         padding-left: 0;
     }
+
+    .figureContainer {
+        margin-left: 8rem;
+    }
 }

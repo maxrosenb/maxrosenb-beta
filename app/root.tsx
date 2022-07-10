@@ -9,6 +9,7 @@ import {
   ScrollRestoration,
 } from "remix";
 import Footer from "~/components/footer";
+import { AnimatePresence } from "framer-motion";
 import Navigation from "~/components/navigation";
 
 import variablesStyles from "~/styles/variables.css";
@@ -64,7 +65,9 @@ export default function App() {
       <body>
         <Navigation />
         <main>
-          <Outlet />
+          <AnimatePresence exitBeforeEnter>
+            <Outlet />
+          </AnimatePresence>
         </main>
         <Footer />
         <ScrollRestoration />

@@ -127,7 +127,7 @@ export default function BlogPost() {
               </div>
             )}
             {post.author?.name} &middot;{" "}
-            <time dateTime={post.publishDate}>
+            <time dateTime={post.publishDate} style={{ marginLeft: "6px" }}>
               {toReadableDate(post.publishDate)}
             </time>{" "}
           </div>

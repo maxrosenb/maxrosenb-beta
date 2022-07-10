@@ -32,7 +32,7 @@ export default function Index() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.85 }}
         className="w-full h-full md:col-span-3 sm:overflow-auto relative z-0"
       >
         <Hero

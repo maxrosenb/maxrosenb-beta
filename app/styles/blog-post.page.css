@@ -44,7 +44,7 @@
 
 .blog-post .article h1,
 .blog-post .article h2 {
-    font-size: var(--text-2xl);
+    font-size: var(--text-3xl);
     margin-top: var(--space-3xl);
 }
 

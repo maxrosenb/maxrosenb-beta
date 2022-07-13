@@ -56,6 +56,11 @@ export default function App() {
   return (
     <html lang="en">
       <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5894276300652245"
+          crossorigin="anonymous"
+        ></script>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width" />
 

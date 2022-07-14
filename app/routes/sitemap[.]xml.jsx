@@ -29,13 +29,17 @@ const sitemapGenerator = new ContentfulSitemap(client, [
 ]);
 
 export const loader = () => {
-  const smStream = new SitemapStream({ hostname: "https://maxrosenb.com/" });
+  const smStream = new SitemapStream({
+    hostname: "https://www.maxrosenb.com/",
+  });
   const pipeline = smStream.pipe(createGzip());
 
   // Return the response with the content, a status 200 message, and the appropriate headers for an XML page
   return sitemapGenerator.buildRoutes().then((routes) => {
     // pipe your entries or directly write them.
     routes.forEach((route) => smStream.write(route));
+    console.log("ROUTES:");
+    console.log(routes);
     smStream.end();
 
     // cache the response

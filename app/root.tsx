@@ -68,6 +68,11 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5894276300652245"
+          crossorigin="anonymous"
+        ></script>
         <Navigation />
         <main>
           <AnimatePresence exitBeforeEnter>
